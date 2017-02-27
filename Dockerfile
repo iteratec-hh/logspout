@@ -1,6 +1,7 @@
 FROM gliderlabs/logspout:master
 
 ENV DOCKERIZE_VERSION v0.3.0
+ENV KAFKA_COMPRESSION_CODEC snappy
 
 # Get dockerize
 RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSION/dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz \
