@@ -14,4 +14,4 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
     && rm dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz
 
 # Wait for target logstash
-CMD dockerize -wait tcp $(echo $ROUTE_URIS | grep -Eo '(tcp|udp).*$')
+# CMD dockerize -wait tcp $(echo $ROUTE_URIS | grep -Eo '(tcp|udp).*$')
